@@ -38,6 +38,7 @@ const handleSubmit = async (review: {
     }
 };
 
+// TODO: kan zonder onmounted
 onMounted(async () => {
     await fetchBooks();
     await fetchAuthors();

@@ -17,6 +17,7 @@ export const getReviewsByBookId = (bookId: number) =>
 
 export const fetchReviews = reviewsStore.actions.getAll;
 
+// TODO: vraag: waarom niet de reviewStore gebruiken voor postRequest?
 export const createReview = async (
     bookId: number,
     review: {

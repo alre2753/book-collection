@@ -2,6 +2,7 @@
 import { onMounted } from 'vue';
 import { fetchBooks, getAllBooks, deleteBook } from '../store';
 
+// TODO: zou ook zonder onMounted moeten kunnen
 onMounted(() => {
     fetchBooks();
 });

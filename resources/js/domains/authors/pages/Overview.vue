@@ -28,6 +28,7 @@ const handleDelete = async (id: number) => {
             <td>{{ author.name }}</td>
             <router-link :to="{name: 'authors.edit', params: { id: author.id } }"> | Bewerk </router-link> |
             <button @click="handleDelete(author.id)">Verwijder | </button>
+            <!-- TODO: het is mooier om via een error component de error automatisch uit de error bag te laten halen, dan kan deletingAuthorId ook weg -->
             <span v-if="getMessage && deletingAuthorId === author.id" class="error-message"
             >
                   {{ getMessage }}

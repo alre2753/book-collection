@@ -22,6 +22,7 @@ fetchReviews();
 const review = getReviewById(Number(route.params.id));
 
 const handleSubmit = async (data) => {
+    // TODO: typescript foutmeldingen verhelpen
     await updateReview(route.params.id, data);
     router.push({ name: 'books.show', params: { id: review.value.book_id } });
 };

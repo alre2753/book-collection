@@ -1,4 +1,5 @@
 <template>
+    <!-- TODO: een volgende keer mag je wel een apart Nav component maken voor de navigatie voor betere structuur -->
     <nav>
         <router-link :to="{name: 'books.overview'}">Boeken Overzicht</router-link> |
         <router-link :to="{name: 'books.create'}">Boek Toevoegen</router-link> |
